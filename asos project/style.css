@@ -1,0 +1,104 @@
+#main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    color: #666;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: block;
+  }
+  .topbar {
+    height: 30px;
+    margin: 0 auto;
+    max-width: 1366px;
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+    height: 100%;
+    display: flex;
+  }
+  .para {
+    display: block;
+    color: #666;
+    padding: 0 19px;
+    line-height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .flag {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0 0 0 1px #ddd;
+    margin: 0 17px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .bot {
+    height: 60px;
+  }
+  .brand {
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    background-color: #2d2d2d;
+  }
+  .section {
+    display: inline-block;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .women {
+    height: 100%;
+    line-height: 60px;
+    width: 100%;
+    color: #fff;
+    background-color: #2d2d2d;
+    border-bottom: none;
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  .men {
+    color: #fff;
+  
+    border-bottom: none;
+    height: 100%;
+    font-family: futura-pt, sans-serif;
+    margin-left: -30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 230px;
+    margin-top: 20px;
+    margin-right: 1000px;
+  }
+  .search {
+    padding: 11px 15px 11px 30px;
+  }
+  .form {
+    position: static;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  
+    overflow-y: initial;
+    
+  }

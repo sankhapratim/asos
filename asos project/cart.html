@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designed clothes for mens</title>
+    <style>
+        .nav{
+            height: 50px;
+            width: 1520px;
+            margin: auto;
+            display: flex;
+            position: fixed;
+            top: 0px;
+            background-color: white;
+        }
+        .nav>div{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+        .nav>h1{
+            width: 50%;;
+            margin: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .mens:hover,.womens:hover,.search:hover,.login:hover,.wishlist:hover,.bag:hover{
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,22%);
+            gap: 20px;
+            width: 60%;
+            margin: auto;
+        }
+        #container>div{
+            margin-top: 50px;
+            height: 380px;
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            background-color: black;
+            color: white;
+            height: 25px;
+            border: 0px;
+        }
+        .footer{
+            height: 100px;
+            width: 70%;
+            margin: auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .footer>span{
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        span:hover{
+            border-bottom: 0.5px solid black;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="container"></div>
+   
+    <div class="footer">
+    </div>
+</body>
+</html>
+<script>
+     var cart=JSON.parse(localStorage.getItem("cart"));
+     appenddata(cart);
+    function appenddata(cart){
+        
+            var div = document.createElement("div");
+            var img = document.createElement("img");
+            img.src = cart[0];
+            var title = document.createElement("h3");
+            title.innerHTML = cart[1];
+            var price = document.createElement("p");
+            price.innerHTML = cart[2];
+            var btn = document.createElement("button");
+            btn.textContent="Proceed to checkout";
+            btn.onclick  = function(){
+                location.replace("checkout.html")
+            };
+
+            div.append(img,title,price,btn);
+        
+
+        document.querySelector("#container").append(div);
+    };
+    console.log(cart);
+
+</script>

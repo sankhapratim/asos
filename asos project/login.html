@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *{
+           font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;;
+       }
+       body{
+           background-color: lightgray;
+       }
+      #logo{
+         align-items: center;
+         margin: auto;
+         margin-left: 535px;
+      }
+      #container{
+          width: 40%;
+          height: 700px;
+          background-color: white;
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+      }  
+    label{
+        width: 100%;
+        margin: 0 3% 11px 0;
+        margin-left: 90px;
+        margin-top: 40px;
+        min-width: 20%;
+        float: left;
+        clear: both;
+        text-transform: uppercase;
+    }
+  input{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: .4px;   
+    width: 63%;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    margin-left: 90px;
+}
+#sign_in{
+    width: 63%;
+    height: 45px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    background: #2d2d2d;
+    color: #fff;
+    text-transform: uppercase;
+}
+  p{
+      margin-left: 180px;
+      margin-top: 30px;
+  }
+  h3{
+      margin-left: 160px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+  }
+  #box{
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+   #google{
+       width: 45%;
+       border: 2px solid rgb(185, 183, 183);
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  } 
+  #apple{
+    width: 45%;
+    border: 2px solid rgb(185, 183, 183);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  } 
+  #fb{
+       width: 45%;
+       border: 2px solid rgb(185, 183, 183);
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  #tw{
+    width: 45%;
+    border: 2px solid rgb(185, 183, 183);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  } 
+  .gimg{
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .text{
+      margin-left: 25px;
+      letter-spacing: .6px;
+  }
+ #signup{
+     display: none;
+ }
+ button{
+     background-color: transparent;
+     border-color: transparent;
+     margin-left: 120px;
+ }
+   </style>
+</head>
+<body>
+    <div id="logo">
+    <img src="png/Asos-logo.png" alt="logo" width="120px">
+    </div>
+    
+        <div id="container">
+            <div>
+                <button onclick="boom1()">Sign In</button>
+                <button onclick="boom()">Sign up</button>
+            </div>
+            <hr>
+             <div id="signin">
+            <label for="email">EMAIL ADDRESS :</label>
+            <input type="email"  id="email_check">
+            <label for="password">PASSWORD</label>
+            <input type="password"  id="pass_check">
+            <input type="submit" name="sign_in" id="sign_in" value="SIGN IN" onclick="checkdata()">
+            <p>Forgot password</p>
+
+            <h3>OR SIGN WITH...</h3>
+
+            <div id="box">
+                <div id="google">
+                    <img src="png/google.png" alt="logo" width="20%" height="20px" class="gimg">
+                    <h4 class="text">GOOGLE</h4>
+                </div>
+                <div id="apple">
+                    <img src="png/snap.png" alt="logo" width="20%" height="20px" class="gimg">
+                    <h4 class="text">snap</h4>
+                </div>
+            </div>
+            <div id="box">
+                <div id="fb">
+                    <img src="png/facebook.png" alt="logo" width="20%" height="20px" class="gimg">
+                    <h4 class="text">FACEBOOK</h4>
+                </div>
+                <div id="tw">
+                    <img src="png/insta.png" alt="logo" width="20%" height="20px" class="gimg">
+                    <h4 class="text">TWITTER</h4>
+                </div>
+            </div>
+            </div>
+        
+            <div id="signup">
+                <label for="email" >EMAIL ADDRESS :</label>
+                <input type="email" id="email">
+                <label for="NAME" >NAME</label>
+                <input type="text" id="name">
+                <label for="number" >NUMBER</label>
+                <input type="number" id="no">
+                <label for="password" >PASSWORD</label>
+                <input type="password" id="pass">
+                <input type="submit" name="sign_in" id="sign_in" value="SUBMIT" onclick="submitdata()">
+            </div>        
+         </div>
+        
+
+       
+</body>
+</html>
+<script src="login.js"></script>

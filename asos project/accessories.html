@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #down{
+            width: 100%;
+            height: 60px;
+            border: 1px solid black;
+            display: flex;
+            background-color: black;
+            color: white;
+        }
+        #logo{
+            margin-left: 40px;
+        }
+        .men{
+            padding-right: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .women{
+            font-size: 20px;
+            padding-right: 25px;
+            cursor: pointer;
+        }
+        #search{
+            font-size: 20px;
+            width: 400%;
+            height: 50px;
+            margin-top: 5px;
+            margin-right: 40px;
+            border-radius: 50px;
+        }
+        .login{
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        .top {
+  color: #666;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: block;
+}
+.topbar {
+  height: 30px;
+  margin: 0 auto;
+  max-width: 1366px;
+  box-sizing: border-box;
+  padding: 0 32px;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: right;
+  height: 100%;
+  display: flex;
+}
+.para {
+  display: block;
+  color: #666;
+  padding: 0 19px;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.flag {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0 0 0 1px #ddd;
+  margin: 0 17px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+       
+        #intro{
+            width: 100%;
+            height: 40px;
+            font-family: futura-pt,sans-serif;
+            background-color: rgb(248, 248, 248);
+            /* font-size: 24px; */
+            letter-spacing: .4px;
+            line-height: 25px;
+            font-weight: 700;
+            color: inherit;
+            text-align: center;
+        }
+        
+        #main_heading{
+            padding-top: 10px;
+            margin-bottom: 0px;
+        }
+    
+        #main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 5px;
+            margin: auto;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        #product{
+            width: 280px;
+            height: 450px;
+            margin-top: 10px;
+        }
+        #title{
+            font-family: inherit;
+            line-height: 15px;
+            font-size: 14px;
+            font-weight: 100;
+            padding-bottom: 0px;
+        }
+        #price{
+            padding-top: 0px;
+            line-height: 0px;
+            color: rgb(145, 140, 140);
+            font-size: 17px;
+            letter-spacing: .8px;
+        }
+        #icons1{
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #all_details1{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            gap: 10px;
+            background-color: rgb(248, 248, 248);
+        }
+        #details1{
+            width: 20%;
+            height: 100%;
+            margin-left: 40px;
+        }
+        #about1{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(243, 237, 237);
+        }
+        #about1{
+            display: flex;
+        }
+        #policy{
+            padding-left: 850px;
+        }
+        #year{
+            padding-left: 10px;
+        }
+        .price_cart{
+            display: flex;
+            gap: 90px;
+            text-align: center;
+        }
+        .cartbutton{
+            width: 120px;
+            height: 30px;
+            background-color: green;
+            border: 0px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="intro">
+        <h2 id="main_heading">Finishing touches</h2>
+    </div>
+    <div id="main">
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-camera-bag-with-bandana-print-in-black-and-white/201206631-1-black?$n_320w$&wid=317&fit=constrain" alt="camera bag" width="100%">
+            <p id="title">ASOS DESIGN camera bag with bandana print in black and white</p>
+            <div class="price_cart">
+            <h5 id="price">$16.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-5-panel-cap-in-black-fleece-with-branding/201145543-1-black?$n_320w$&wid=317&fit=constrain" alt="cap" width="100%">
+            <p id="title"> ASOS DESIGN 5 panel cap in black fleece with branding</p>
+            <div class="price_cart">
+            <h5 id="price">$12.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-baseball-cap-with-nasa-badges-in-black/201071107-1-black?$n_320w$&wid=317&fit=constrain" alt="cap" width="100%">
+            <p id="title">ASOS DESIGN baseball cap with NASA badges in black</p>
+            <div class="price_cart">
+            <h5 id="price">$12.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-retro-round-sunglasses-in-yellow-with-vintage-green-lens/200376143-1-yellow?$n_320w$&wid=317&fit=constrain" alt="Sunglasses" width="100%">
+            <p id="title">ASOS DESIGN retro round sunglasses in yellow with vintage green lens</p>
+            <div class="price_cart">
+            <h5 id="price">$13.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-mid-rectangle-sunglasses-in-green-with-tinted-lens/200293214-1-lightgreen?$n_320w$&wid=317&fit=constrain" alt="sunglasses" width="100%">
+            <p id="title">ASOS DESIGN mid rectangle sunglasses in yellow with tinted lens</p>
+            <div class="price_cart">
+            <h5 id="price">$13.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-band-ring-in-burnished-silver-tone/200559259-1-silver?$n_320w$&wid=317&fit=constrain" alt="Ring" width="100%">
+            <p id="title">ASOS DESIGN band ring in burnished silver tone</p>
+            <div class="price_cart">
+            <h5 id="price">$5.20</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-square-signet-ring-with-embossing-in-gold-tone/201184182-1-gold?$n_320w$&wid=317&fit=constrain" alt="Ring" width="100%">
+            <p id="title">ASOS DESIGN square signet ring with embossing in gold tone</p>
+            <div class="price_cart">
+            <h5 id="price">$5.10</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://images.asos-media.com/products/asos-design-colourful-beaded-neck-chain-with-snooker-ball-beads/201538288-1-multi?$n_320w$&wid=317&fit=constrain" alt="Necklace" width="100%">
+            <p id="title">ASOS DESIGN colourful beaded neck chain with snooker ball beads</p>
+            <div class="price_cart">
+            <h5 id="price">$8.00</h5>
+            <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer" ></div>
+</body>
+</html>
+<script type="module">
+    import {navbar} from "./components/navbar.js";
+    var nav = document.querySelector("#navbar");
+    nav.innerHTML = navbar();
+    import {footer} from "./components/footer.js";
+    var foot = document.querySelector("#footer");
+    foot.innerHTML = footer();
+</script>
